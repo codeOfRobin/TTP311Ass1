@@ -17,8 +17,4 @@ forRates=forwardRates(A0,E0,413,Ac,Ec,24);
 constsOfEqbm=eqbmConst(enthalpy,entropy,[513; 513 ; 513]);
 backwardRates=constsOfEqbm./forRates;
 
-% tRange = [0,24];              % set up range for t
-% [myT,myY]=ode15s(@(t,y) mainDiffEq(t,y,forRates,backwardRates,1),tRange,[0.1;0.1;0.1;1]);
-% plot(myT,myY(:,1),'c');
-% legend('prey','predator');
 
